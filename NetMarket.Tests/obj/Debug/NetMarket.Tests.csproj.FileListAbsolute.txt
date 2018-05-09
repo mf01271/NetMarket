@@ -1,0 +1,7 @@
+D:\NetMarket\NetMarket\NetMarket.Tests\bin\Debug\NetMarket.Tests.dll
+D:\NetMarket\NetMarket\NetMarket.Tests\bin\Debug\NetMarket.Tests.pdb
+D:\NetMarket\NetMarket\NetMarket.Tests\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+D:\NetMarket\NetMarket\NetMarket.Tests\bin\Debug\es\Microsoft.VisualStudio.QualityTools.UnitTestFramework.resources.dll
+D:\NetMarket\NetMarket\NetMarket.Tests\obj\Debug\NetMarket.Tests.csprojResolveAssemblyReference.cache
+D:\NetMarket\NetMarket\NetMarket.Tests\obj\Debug\NetMarket.Tests.dll
+D:\NetMarket\NetMarket\NetMarket.Tests\obj\Debug\NetMarket.Tests.pdb
