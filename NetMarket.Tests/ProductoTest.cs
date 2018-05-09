@@ -21,5 +21,13 @@ namespace NetMarket.Tests
             productoService.Obtenerproducto(1);
             Assert.IsNull(producto);
         }
+        [TestMethod]
+        public void GuardarProductoTest()
+        {
+            pkProducto = 0;
+            pkProducto = productoService.Guardarproducto(pkProducto, "nombre", "descripcion"...);
+            var producto = productoService.Obtenerproducto(pkProducto);
+            Assert.AreEqual(producto.nombreProducto, "Test Modificado");
+        }
     }
 }
