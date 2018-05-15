@@ -86,3 +86,7 @@ D:\NetMarket\NetMarket\NetMarketAdmin\bin\es\Microsoft.Owin.Security.MicrosoftAc
 D:\NetMarket\NetMarket\NetMarketAdmin\obj\Debug\NetMarketAdmin.csprojResolveAssemblyReference.cache
 D:\NetMarket\NetMarket\NetMarketAdmin\obj\Debug\NetMarketAdmin.dll
 D:\NetMarket\NetMarket\NetMarketAdmin\obj\Debug\NetMarketAdmin.pdb
+D:\NetMarket\NetMarket\NetMarketAdmin\bin\ClientRestNet.dll
+D:\NetMarket\NetMarket\NetMarketAdmin\bin\System.Net.Http.Formatting.dll
+D:\NetMarket\NetMarket\NetMarketAdmin\bin\ClientRestNet.pdb
+D:\NetMarket\NetMarket\NetMarketAdmin\bin\System.Net.Http.Formatting.xml

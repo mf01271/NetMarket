@@ -1,0 +1,59 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head runat="server">
+    <meta charset="utf-8" />
+    <title>NetMarket</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="~/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/bootstrap-responsive.min.css" />
+    <link rel="stylesheet" href="~/css/matrix-login.css" />
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,700,800" rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/6.7.0/sweetalert2.min.css">
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/6.7.0/sweetalert2.min.js'></script>
+
+    <script type="text/javascript">
+        function alertSweet(titulo, mensaje, tipo, botonConfirmacion) {
+            swal({
+                title: titulo,
+                text: mensaje,
+                type: tipo,
+                confirmButtonText: botonConfirmacion
+            });
+        }
+
+    </script>
+</head>
+<body>
+    <div id="loginbox" class="page-container" style="margin: auto; align-content:center">
+        <form id="loginform" class="form-vertical" >
+
+            <div class="control-group normal_text"> <h3>NetMarket</h3></div>
+            <div class="control-group">
+                <div class="controls">
+                    <div class="main_input_box input-cont">
+                        <span class="add-on bg_lg"><i class="icon-user"> </i></span>
+                        <input type="text" ID="txbUsuario" placeholder="Nombre de Usuario" />
+                    </div>
+                </div>
+            </div>
+            <div class="control-group">
+                <div class="controls">
+                    <div class="main_input_box">
+                        <span class="add-on bg_ly"><i class="icon-lock"></i></span>
+                        <input type="password" ID="txbPassword" TextMode="Password" placeholder="Contraseña" />
+                    </div>
+                </div>
+            </div>
+            <div class="form-actions text-center">
+                <div class="btn-cont">
+                    <button type="button" ID="btnIniciarSesion" class="flip-link btn btn-info">Iniciar sesión</button>
+                </div>
+            </div>
+        </form>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="~/js/Matrix.js"></script>
+    <script src="~/js/login.js"></script>
+</body>
+</html>

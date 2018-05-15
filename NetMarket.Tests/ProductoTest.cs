@@ -1,6 +1,7 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using NetMarketData.Domain.Services;
+using NetMarketData.Domain.Entities;
 
 namespace NetMarket.Tests
 {
@@ -12,22 +13,29 @@ namespace NetMarket.Tests
         [TestMethod]
         public void ObtenerProductoExisteTest()
         {
-            productoService.Obtenerproducto(1);
-            Assert.IsNotNull(producto);
+            ProductoDTO productodto = new ProductoDTO();
+            productodto.idProducto = 1;
+            productoService.Obtenerproducto(productodto);
+            Assert.IsNotNull(productodto);
         }
         [TestMethod]
         public void ObtenerProductoNoExisteTest()
         {
-            productoService.Obtenerproducto(1);
-            Assert.IsNull(producto);
+            ProductoDTO productodto = new ProductoDTO();
+            productodto.idProducto = 8;
+            productoService.Obtenerproducto(productodto);
+            Assert.IsNull(productodto);
         }
-        [TestMethod]
-        public void GuardarProductoTest()
-        {
-            pkProducto = 0;
-            pkProducto = productoService.Guardarproducto(pkProducto, "nombre", "descripcion"...);
-            var producto = productoService.Obtenerproducto(pkProducto);
-            Assert.AreEqual(producto.nombreProducto, "Test Modificado");
-        }
+        //[TestMethod]
+        //public void GuardarProductoTest()
+        //{
+        //    ProductoDTO productodto = new ProductoDTO();
+        //    productodto.idProducto = 1;
+        //    productoService.Obtenerproducto(productodto);
+        //    productodto.idProducto = 0;
+        //    productodto.idProducto = productoService.Guardarproducto(productodto);
+        //    var producto = productoService.Obtenerproducto(productodto.idProducto);
+        //    Assert.AreEqual(producto.nombreProducto, "Test Modificado");
+        //}
     }
 }
