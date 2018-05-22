@@ -14,11 +14,11 @@ namespace NetMarket.Tests
     public class CategoriaTest
     {
         CategoriaProductoService categoriaService = new CategoriaProductoService();
+        CategoriaDTO categoriadto = new CategoriaDTO();
 
         [TestMethod]
         public void ObtenerCategoriaoExisteTest()
         {
-            CategoriaDTO categoriadto = new CategoriaDTO();
             categoriadto.idCategoria= 1;
             CategoriaProducto categoria = categoriaService.Obtenercategoria(categoriadto);
             Assert.IsNotNull(categoria);
@@ -27,10 +27,18 @@ namespace NetMarket.Tests
         [TestMethod]
         public void ObtenerCategoriaNoExisteTest()
         {
-            CategoriaDTO categoriadto = new CategoriaDTO();
             categoriadto.idCategoria = 8;
             CategoriaProducto categoria = categoriaService.Obtenercategoria(categoriadto);
             Assert.IsNull(categoria);
+        }
+        [TestMethod]
+        public void EliminarCategoriaTest()
+        {
+            CategoriaProducto cat = new CategoriaProducto();
+            categoriadto.idCategoria = 2;
+            categoriaService.Eliminarcategoria(categoriadto);
+            cat = categoriaService.Obtenercategoria(categoriadto);
+            Assert.IsNull(cat);
         }
     }
 }

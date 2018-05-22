@@ -32,7 +32,7 @@ namespace NetMarketAdmin.Controllers
             return View();
         }
 
-        public ActionResult Empresa()
+        public ActionResult Empresas()
         {
             return View();
         }

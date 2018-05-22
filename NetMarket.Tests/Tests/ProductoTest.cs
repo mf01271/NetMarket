@@ -10,11 +10,11 @@ namespace NetMarket.Tests
     public class ProductoTest
     {
         ProductoService productoService = new ProductoService();
+        ProductoDTO productodto = new ProductoDTO();
 
         [TestMethod]
         public void ObtenerProductoExisteTest()
-        {
-            ProductoDTO productodto = new ProductoDTO();
+        {           
             productodto.idProducto = 1;
             Producto producto = productoService.Obtenerproducto(productodto);
             Assert.IsNotNull(producto);
@@ -22,9 +22,17 @@ namespace NetMarket.Tests
         [TestMethod]
         public void ObtenerProductoNoExisteTest()
         {
-            ProductoDTO productodto = new ProductoDTO();
             productodto.idProducto = 8;
             Producto producto = productoService.Obtenerproducto(productodto);
+            Assert.IsNull(producto);
+        }
+        [TestMethod]
+        public void EliminarProductoTest()
+        {
+            Producto producto = new Producto();
+            productodto.idProducto = 2;
+            productoService.Eliminarproducto(productodto);
+            producto = productoService.Obtenerproducto(productodto);
             Assert.IsNull(producto);
         }
     }

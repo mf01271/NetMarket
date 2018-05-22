@@ -13,21 +13,30 @@ namespace NetMarket.Tests
     public class PersonaTest
     {
         PersonaService personaService = new PersonaService();
+        PersonaDTO personadto = new PersonaDTO();
+        Persona persona = new Persona();
 
         [TestMethod]
         public void ObtenerPersonaExisteTest()
         {
-            PersonaDTO personadto = new PersonaDTO();
-            personadto.id_persona = 2;
-            Persona persona = personaService.ObtenerPersona(personadto);
+            personadto.id_persona = 6;
+            persona = personaService.ObtenerPersona(personadto);
             Assert.IsNotNull(persona);
         }
         [TestMethod]
         public void ObtenerPersonaNoExisteTest()
         {
-            PersonaDTO personadto = new PersonaDTO();
             personadto.id_persona = 8;
-            Persona persona = personaService.ObtenerPersona(personadto);
+            persona = personaService.ObtenerPersona(personadto);
+            Assert.IsNull(persona);
+        }
+
+        [TestMethod]
+        public void EliminarPersonaTest()
+        {
+            personadto.id_persona = 7;
+            personaService.EliminarPersona(personadto);
+            persona = personaService.ObtenerPersona(personadto);
             Assert.IsNull(persona);
         }
     }

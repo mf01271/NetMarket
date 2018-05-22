@@ -80,7 +80,7 @@
         }).done(function (respuestaMVC) {
             console.log(respuestaMVC.Mensaje);
             if (respuestaMVC.Codigo == 0) {
-                window.location.replace("@Url.Action("Empresas","Empresa")");
+                window.location.replace("@Url.Action("Empresas", "Empresa")");
             } else {
                 window.alert("Datos erróneos");
             }

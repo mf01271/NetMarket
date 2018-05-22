@@ -67,11 +67,13 @@
   <ItemGroup>
     <Compile Include="Tests\CategoriaTest.cs" />
     <Compile Include="Tests\EmpresaTest.cs" />
-    <Compile Include="Tests\ImagenTest.cs" />
     <Compile Include="Tests\PersonaTest.cs" />
+    <Compile Include="Tests\ProductoEmpresaTest.cs" />
+    <Compile Include="Tests\ProductoSucursalTest.cs" />
     <Compile Include="Tests\ProductoTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Tests\SucursalTest.cs" />
+    <Compile Include="Tests\TipoPersonaTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\NetMarketData\NetMarketData.csproj">

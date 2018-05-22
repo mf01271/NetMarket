@@ -13,11 +13,11 @@ namespace NetMarket.Tests.Tests
     public class SucursalTest
     {
         SucursalService sucursalService = new SucursalService();
+        SucursalDTO sucursaldto = new SucursalDTO();
 
         [TestMethod]
         public void ObtenerSucursalExisteTest()
-        {
-            SucursalDTO sucursaldto = new SucursalDTO();
+        {            
             sucursaldto.idSucursal = 1;
             Sucursal sucursal = sucursalService.ObtenerSucursal(sucursaldto);
             Assert.IsNotNull(sucursal);
@@ -26,9 +26,18 @@ namespace NetMarket.Tests.Tests
         [TestMethod]
         public void ObtenerSucursalNoExisteTest()
         {
-            SucursalDTO sucursaldto = new SucursalDTO();
             sucursaldto.idSucursal = 8;
             Sucursal sucursal = sucursalService.ObtenerSucursal(sucursaldto);
+            Assert.IsNull(sucursal);
+        }
+
+        [TestMethod]
+        public void EliminarSucursalTest()
+        {
+            Sucursal sucursal = new Sucursal();
+            sucursaldto.idSucursal = 2;
+            sucursalService.EliminarSucursal(sucursaldto);
+            sucursal = sucursalService.ObtenerSucursal(sucursaldto);
             Assert.IsNull(sucursal);
         }
     }

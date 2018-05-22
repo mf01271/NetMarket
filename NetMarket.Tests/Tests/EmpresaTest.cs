@@ -13,11 +13,11 @@ namespace NetMarket.Tests
     public class EmpresaTest
     {
         EmpresaService empresaService = new EmpresaService();
+        EmpresaDTO empresadto = new EmpresaDTO();
 
         [TestMethod]
         public void ObtenerEmpresaExisteTest()
         {
-            EmpresaDTO empresadto = new EmpresaDTO();
             empresadto.idEmpresa = 1;
             Empresa empresa = empresaService.ObtenerEmpresa(empresadto);
             Assert.IsNotNull(empresa);
@@ -25,9 +25,18 @@ namespace NetMarket.Tests
         [TestMethod]
         public void ObtenerEmpresanNoExisteTest()
         {
-            EmpresaDTO empresadto = new EmpresaDTO();
             empresadto.idEmpresa = 8;
             Empresa empresa = empresaService.ObtenerEmpresa(empresadto);
+            Assert.IsNull(empresa);
+        }
+
+        [TestMethod]
+        public void EliminarEmpresaTest()
+        {
+            Empresa empresa = new Empresa();
+            empresadto.idEmpresa = 2;
+            empresaService.EliminarEmpresa(empresadto);
+            empresa = empresaService.ObtenerEmpresa(empresadto);
             Assert.IsNull(empresa);
         }
 
