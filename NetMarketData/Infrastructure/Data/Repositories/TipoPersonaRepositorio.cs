@@ -45,5 +45,10 @@ namespace NetMarketData.Infrastructure.Data.Repositories
         {
             return GetAll().ToList();
         }
+
+        public TipoPersona ObtenerxNombre(string nombreTipo)
+        {
+            return Get(nombreTipo);
+        }
     }
 }

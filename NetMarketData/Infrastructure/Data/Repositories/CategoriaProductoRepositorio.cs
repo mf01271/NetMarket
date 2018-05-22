@@ -41,7 +41,11 @@ namespace NetMarketData.Infrastructure.Data.Repositories
         public CategoriaProducto obtenerCategoriaProducto(CategoriaDTO c)
         {
             var e = Get(c.idCategoria);
-            if (e.eliminado != true)
+            if (e == null)
+            {
+                return null;
+            }
+            else if (e.eliminado != true)
             {
                 return e;
             }

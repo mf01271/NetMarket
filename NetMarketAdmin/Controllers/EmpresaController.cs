@@ -14,6 +14,10 @@ namespace NetMarketAdmin.Controllers
         public ActionResult Index()
         {
             return View();
-        }     
+        }
+        public ActionResult Empresas()
+        {
+            return View();
+        }
     }
 }

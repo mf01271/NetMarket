@@ -60,6 +60,7 @@
     <Compile Include="Domain\Entities\DetalleHorarioDTO.cs" />
     <Compile Include="Domain\Entities\DiaDTO.cs" />
     <Compile Include="Domain\Entities\EmpresaDTO.cs" />
+    <Compile Include="Domain\Entities\PersonaDTO.cs" />
     <Compile Include="Domain\Entities\TurnoDTO.cs" />
     <Compile Include="Domain\Entities\ImagenDTO.cs" />
     <Compile Include="Domain\Entities\ProductoEmpresaDTO.cs" />
@@ -69,6 +70,7 @@
     <Compile Include="Domain\Entities\TipoPersonaDTO.cs" />
     <Compile Include="Domain\Services\CategoriaProductoService.cs" />
     <Compile Include="Domain\Services\EmpresaService.cs" />
+    <Compile Include="Domain\Services\PersonaService.cs" />
     <Compile Include="Domain\Services\TurnoService.cs" />
     <Compile Include="Domain\Services\ImagenService.cs" />
     <Compile Include="Domain\Services\ProductoEmpresaService.cs" />
@@ -104,19 +106,19 @@
       <DependentUpon>NetMarketDB.tt</DependentUpon>
     </Compile>
     <Compile Include="Infrastructure\Data\DataModels\NetMarketDB.Context.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
       <DependentUpon>NetMarketDB.Context.tt</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
     </Compile>
     <Compile Include="Infrastructure\Data\DataModels\NetMarketDB.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
       <DependentUpon>NetMarketDB.tt</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
     </Compile>
     <Compile Include="Infrastructure\Data\DataModels\NetMarketDB.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
       <DependentUpon>NetMarketDB.edmx</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
     </Compile>
     <Compile Include="Infrastructure\Data\DataModels\oferta.cs">
       <DependentUpon>NetMarketDB.tt</DependentUpon>
@@ -160,25 +162,22 @@
     <Compile Include="Infrastructure\Data\DataModels\Turno.cs">
       <DependentUpon>NetMarketDB.tt</DependentUpon>
     </Compile>
+    <Compile Include="Infrastructure\Data\Repositories\CategoriaProductoRepositorio.cs" />
     <Compile Include="Infrastructure\Data\Repositories\DetalleHorarioRepositorio.cs" />
     <Compile Include="Infrastructure\Data\Repositories\EFRepositorio.cs" />
     <Compile Include="Infrastructure\Data\Repositories\EmpresaRepositorio.cs" />
-    <Compile Include="Infrastructure\Data\Repositories\CategoriaProductoRepositorio.cs" />
-    <Compile Include="Infrastructure\Data\Repositories\TurnoRepositorio.cs" />
     <Compile Include="Infrastructure\Data\Repositories\ImagenRepositorio.cs" />
+    <Compile Include="Infrastructure\Data\Repositories\PersonaRepositorio.cs" />
     <Compile Include="Infrastructure\Data\Repositories\ProductoEmpresaRepositorio.cs" />
     <Compile Include="Infrastructure\Data\Repositories\ProductoRepositorio.cs" />
     <Compile Include="Infrastructure\Data\Repositories\ProductoSucursalRepositorio.cs" />
     <Compile Include="Infrastructure\Data\Repositories\SucursalRepositorio.cs" />
     <Compile Include="Infrastructure\Data\Repositories\TipoPersonaRepositorio.cs" />
+    <Compile Include="Infrastructure\Data\Repositories\TurnoRepositorio.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.Config" />
-    <EntityDeploy Include="Infrastructure\Data\DataModels\NetMarketDB.edmx">
-      <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>NetMarketDB.Designer.cs</LastGenOutput>
-    </EntityDeploy>
     <None Include="Infrastructure\Data\DataModels\NetMarketDB.edmx.diagram">
       <DependentUpon>NetMarketDB.edmx</DependentUpon>
     </None>
@@ -187,16 +186,21 @@
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <EntityDeploy Include="Infrastructure\Data\DataModels\NetMarketDB.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>NetMarketDB.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+  </ItemGroup>
   <ItemGroup>
     <Content Include="Infrastructure\Data\DataModels\NetMarketDB.Context.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>NetMarketDB.edmx</DependentUpon>
+      <Generator>TextTemplatingFileGenerator</Generator>
       <LastGenOutput>NetMarketDB.Context.cs</LastGenOutput>
     </Content>
     <Content Include="Infrastructure\Data\DataModels\NetMarketDB.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>NetMarketDB.edmx</DependentUpon>
+      <Generator>TextTemplatingFileGenerator</Generator>
       <LastGenOutput>NetMarketDB.cs</LastGenOutput>
     </Content>
   </ItemGroup>

@@ -43,16 +43,20 @@ namespace NetMarketData.Infrastructure.Data.Repositories
 
         public Producto obtenerProducto(ProductoDTO p)
         {
+            
             var e = Get(p.idProducto);
-            if (e.eliminado != true)
-            {
-                return e;
-            }
-            else
-            {
+                if (e == null)
+                {
                 return null;
-            }
-
+                }
+                 else if (e.eliminado != true)
+                    {
+                        return e;
+                    }
+                    else
+                    {
+                        return null;
+                    }
         }
 
         public List<Producto> obtenerProductos(ProductoDTO p)

@@ -14,9 +14,9 @@
     }).done(function (respuestaMVC) {
         console.log(respuestaMVC.Mensaje);
         if (respuestaMVC.Codigo == 0) {
-            _datosCategoria = respuestaMVC.Data;
-            console.log(_datosCategoria);
+            window.location.replace("Empresa/empresa");
         } else {
+            
         }
     });
 });

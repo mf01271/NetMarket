@@ -127,7 +127,7 @@
       <PropertyRef Name="idPersona" />
     </Key>
     <Property Name="idPersona" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
-    <Property Name="nombrePersona" Type="varchar" MaxLength="300" />
+    <Property Name="nombrePersona" Type="varchar" MaxLength="300" Nullable="false" />
     <Property Name="apellidos" Type="varchar" MaxLength="300" />
     <Property Name="fechaNacimiento" Type="datetime" />
     <Property Name="contraseña" Type="varchar(max)" Nullable="false" />
@@ -135,8 +135,9 @@
     <Property Name="idTipoPersona" Type="bigint" Nullable="false" />
     <Property Name="telefonoMovilPersona" Type="varchar" MaxLength="100" Nullable="false" />
     <Property Name="telefonoFijo" Type="varchar" MaxLength="100" />
-    <Property Name="CiPersona" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="CiPersona" Type="varchar" MaxLength="50" />
     <Property Name="eliminado" Type="bit" Nullable="false" />
+    <Property Name="tokenPersona" Type="nvarchar(max)" />
   </EntityType>
   <EntityType Name="Producto">
     <Key>

@@ -1,3 +1,4 @@
+D:\NetMarket\NetMarket\NetMarketAdmin\bin\Microsoft.Owin.Security.Twitter.dll
 D:\NetMarket\NetMarket\NetMarketAdmin\bin\roslyn\csc.exe
 D:\NetMarket\NetMarket\NetMarketAdmin\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
 D:\NetMarket\NetMarket\NetMarketAdmin\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
@@ -14,6 +15,7 @@ D:\NetMarket\NetMarket\NetMarketAdmin\bin\NetMarketAdmin.dll.config
 D:\NetMarket\NetMarket\NetMarketAdmin\bin\NetMarketAdmin.dll
 D:\NetMarket\NetMarket\NetMarketAdmin\bin\NetMarketAdmin.pdb
 D:\NetMarket\NetMarket\NetMarketAdmin\bin\Antlr3.Runtime.dll
+D:\NetMarket\NetMarket\NetMarketAdmin\bin\ClientRestNet.dll
 D:\NetMarket\NetMarket\NetMarketAdmin\bin\EntityFramework.dll
 D:\NetMarket\NetMarket\NetMarketAdmin\bin\EntityFramework.SqlServer.dll
 D:\NetMarket\NetMarket\NetMarketAdmin\bin\Microsoft.AspNet.Identity.Core.dll
@@ -28,7 +30,6 @@ D:\NetMarket\NetMarket\NetMarketAdmin\bin\Microsoft.Owin.Security.Facebook.dll
 D:\NetMarket\NetMarket\NetMarketAdmin\bin\Microsoft.Owin.Security.Google.dll
 D:\NetMarket\NetMarket\NetMarketAdmin\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
 D:\NetMarket\NetMarket\NetMarketAdmin\bin\Microsoft.Owin.Security.OAuth.dll
-D:\NetMarket\NetMarket\NetMarketAdmin\bin\Microsoft.Owin.Security.Twitter.dll
 D:\NetMarket\NetMarket\NetMarketAdmin\bin\Microsoft.Web.Infrastructure.dll
 D:\NetMarket\NetMarket\NetMarketAdmin\bin\Newtonsoft.Json.dll
 D:\NetMarket\NetMarket\NetMarketAdmin\bin\Owin.dll
@@ -40,6 +41,8 @@ D:\NetMarket\NetMarket\NetMarketAdmin\bin\System.Web.WebPages.Deployment.dll
 D:\NetMarket\NetMarket\NetMarketAdmin\bin\System.Web.WebPages.dll
 D:\NetMarket\NetMarket\NetMarketAdmin\bin\System.Web.WebPages.Razor.dll
 D:\NetMarket\NetMarket\NetMarketAdmin\bin\WebGrease.dll
+D:\NetMarket\NetMarket\NetMarketAdmin\bin\System.Net.Http.Formatting.dll
+D:\NetMarket\NetMarket\NetMarketAdmin\bin\ClientRestNet.pdb
 D:\NetMarket\NetMarket\NetMarketAdmin\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
 D:\NetMarket\NetMarket\NetMarketAdmin\bin\System.Web.Helpers.xml
 D:\NetMarket\NetMarket\NetMarketAdmin\bin\System.Web.Mvc.xml
@@ -64,6 +67,7 @@ D:\NetMarket\NetMarket\NetMarketAdmin\bin\Microsoft.Owin.Security.OAuth.xml
 D:\NetMarket\NetMarket\NetMarketAdmin\bin\Microsoft.Owin.Security.Google.xml
 D:\NetMarket\NetMarket\NetMarketAdmin\bin\Microsoft.Owin.Security.Twitter.xml
 D:\NetMarket\NetMarket\NetMarketAdmin\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+D:\NetMarket\NetMarket\NetMarketAdmin\bin\System.Net.Http.Formatting.xml
 D:\NetMarket\NetMarket\NetMarketAdmin\bin\es\System.Web.Helpers.resources.dll
 D:\NetMarket\NetMarket\NetMarketAdmin\bin\es\System.Web.Mvc.resources.dll
 D:\NetMarket\NetMarket\NetMarketAdmin\bin\es\System.Web.Optimization.resources.dll
@@ -86,7 +90,3 @@ D:\NetMarket\NetMarket\NetMarketAdmin\bin\es\Microsoft.Owin.Security.MicrosoftAc
 D:\NetMarket\NetMarket\NetMarketAdmin\obj\Debug\NetMarketAdmin.csprojResolveAssemblyReference.cache
 D:\NetMarket\NetMarket\NetMarketAdmin\obj\Debug\NetMarketAdmin.dll
 D:\NetMarket\NetMarket\NetMarketAdmin\obj\Debug\NetMarketAdmin.pdb
-D:\NetMarket\NetMarket\NetMarketAdmin\bin\ClientRestNet.dll
-D:\NetMarket\NetMarket\NetMarketAdmin\bin\System.Net.Http.Formatting.dll
-D:\NetMarket\NetMarket\NetMarketAdmin\bin\ClientRestNet.pdb
-D:\NetMarket\NetMarket\NetMarketAdmin\bin\System.Net.Http.Formatting.xml

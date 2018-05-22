@@ -46,7 +46,11 @@ namespace NetMarketData.Infrastructure.Data.Repositories
         public Empresa obtenerEmpresa(long id)
         {
             var e = Get(id);
-            if (e.eliminado != true)
+            if (e == null)
+            {
+                return null;
+            }
+            else if (e.eliminado != true)
             {
                 return e;
             }
@@ -54,7 +58,7 @@ namespace NetMarketData.Infrastructure.Data.Repositories
             {
                 return null;
             }
-            
+
         }
 
         public List<Empresa> obtenerEmpresas()

@@ -58,97 +58,20 @@
     </When>
     <Otherwise>
       <ItemGroup>
-        <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework" />
+        <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework">
+          <Private>False</Private>
+        </Reference>
       </ItemGroup>
     </Otherwise>
   </Choose>
   <ItemGroup>
-    <Compile Include="CategoriaProducto.cs">
-      <DependentUpon>NetMarketModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Destacados.cs">
-      <DependentUpon>NetMarketModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="DetalleHorario.cs">
-      <DependentUpon>NetMarketModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="DetalleOferta.cs">
-      <DependentUpon>NetMarketModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="DetallePedido.cs">
-      <DependentUpon>NetMarketModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Dia.cs">
-      <DependentUpon>NetMarketModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Empresa.cs">
-      <DependentUpon>NetMarketModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Encargado.cs">
-      <DependentUpon>NetMarketModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Imagen.cs">
-      <DependentUpon>NetMarketModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="NetMarketModel.Context.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>NetMarketModel.Context.tt</DependentUpon>
-    </Compile>
-    <Compile Include="NetMarketModel.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>NetMarketModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="NetMarketModel.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>NetMarketModel.edmx</DependentUpon>
-    </Compile>
-    <Compile Include="oferta.cs">
-      <DependentUpon>NetMarketModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Pedido.cs">
-      <DependentUpon>NetMarketModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Persona.cs">
-      <DependentUpon>NetMarketModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Producto.cs">
-      <DependentUpon>NetMarketModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="ProductoEmpresa.cs">
-      <DependentUpon>NetMarketModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="ProductoSucursal.cs">
-      <DependentUpon>NetMarketModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="ProductoTest.cs" />
+    <Compile Include="Tests\CategoriaTest.cs" />
+    <Compile Include="Tests\EmpresaTest.cs" />
+    <Compile Include="Tests\ImagenTest.cs" />
+    <Compile Include="Tests\PersonaTest.cs" />
+    <Compile Include="Tests\ProductoTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="SeguimientoSolicitudPedido.cs">
-      <DependentUpon>NetMarketModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="SolicitudPedido.cs">
-      <DependentUpon>NetMarketModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="SolicitudPedidoEstado.cs">
-      <DependentUpon>NetMarketModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Sucursal.cs">
-      <DependentUpon>NetMarketModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="TipodeEnvio.cs">
-      <DependentUpon>NetMarketModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="TipodePago.cs">
-      <DependentUpon>NetMarketModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="TipoPersona.cs">
-      <DependentUpon>NetMarketModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Turno.cs">
-      <DependentUpon>NetMarketModel.tt</DependentUpon>
-    </Compile>
+    <Compile Include="Tests\SucursalTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\NetMarketData\NetMarketData.csproj">
@@ -157,27 +80,10 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
-    <EntityDeploy Include="NetMarketModel.edmx">
-      <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>NetMarketModel.Designer.cs</LastGenOutput>
-    </EntityDeploy>
-    <None Include="NetMarketModel.edmx.diagram">
-      <DependentUpon>NetMarketModel.edmx</DependentUpon>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
     </None>
     <None Include="packages.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="NetMarketModel.Context.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>NetMarketModel.edmx</DependentUpon>
-      <LastGenOutput>NetMarketModel.Context.cs</LastGenOutput>
-    </Content>
-    <Content Include="NetMarketModel.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>NetMarketModel.edmx</DependentUpon>
-      <LastGenOutput>NetMarketModel.cs</LastGenOutput>
-    </Content>
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
