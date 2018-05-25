@@ -37,7 +37,7 @@ namespace ApiNet.Controllers
                         nombre_persona = p.nombrePersona,
                         fechaNac_persona = p.fechaNacimiento,
                         contraseña_persona = p.contraseña,
-                        correo_persona =p.correo,
+                        correo_persona = p.correo,
                         id_tipo_persona = p.idTipoPersona,
                         telefono_fijo_persona = p.telefonoFijo,
                         telefono_movil_persona = p.telefonoMovilPersona,
@@ -53,6 +53,27 @@ namespace ApiNet.Controllers
                 return Ok(RespuestaApi<string>.createRespuestaError(ex.ToString(), "error"));
             }
 
+        }
+        [Route("api/Persona/login")]
+        [HttpPost]
+        public IHttpActionResult Login([FromBody] PersonaDTO pe)
+        {
+            try
+            {
+                PersonaDTO per = personaServicio.Login(pe);
+                if(per != null)
+                {
+                    return Ok(RespuestaApi<PersonaDTO>.createRespuestaSuccess(per, "success"));
+                }
+                else
+                {
+                    throw new Exception();
+                }
+
+            }catch (Exception ex)
+            {
+                return Ok(RespuestaApi<string>.createRespuestaError(ex.ToString(), "error"));
+            }
         }
 
     }
