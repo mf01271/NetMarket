@@ -40,5 +40,11 @@ namespace NetMarket.Tests.Tests
             productoSucursal = productoSucursalService.Obtenerproducto(productoSucursaldto);
             Assert.IsNull(productoSucursal);
         }
+        [TestMethod]
+        public void MostrarProductoSucursalTest()
+        {
+            List<ProductoSucursal> lproductoSuc = productoSucursalService.Obtenerproductos(productoSucursaldto);
+            Assert.IsNotNull(lproductoSuc);
+        }
     }
 }

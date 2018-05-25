@@ -40,5 +40,11 @@ namespace NetMarket.Tests.Tests
         //    tipoPersonaService = tipoPersonaService.ObtenerTipo(tipoPersonadto);
         //    Assert.IsNull(tipoPersonadto);
         //}
+        [TestMethod]
+        public void MostrarTipoPersonaTest()
+        {
+            List<TipoPersona> ltipPer = tipoPersonaService.ObtenerTipos();
+            Assert.IsNotNull(ltipPer);
+        }
     }
 }

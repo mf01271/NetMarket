@@ -1,21 +1,49 @@
 ﻿<h2>Empresas</h2>
 <table id="table_id" class="display">
     <thead>
-        <tr>
-            <th>Nombre</th>
-            <th>Nit</th>
-            <th>Razón Social</th>
-            <th>Dirección</th>
-        </tr>
+    <tr>
+        <th>Nombre</th>
+        <th>Nit</th>
+        <th>Razón Social</th>
+        <th>Dirección</th>
+    </tr>
     </thead>
-    <tbody>
-        <tr>
-            <td>Row 1 Data 1</td>
-            <td>Row 1 Data 2</td>
-        </tr>
-        <tr>
-            <td>Row 2 Data 1</td>
-            <td>Row 2 Data 2</td>
-        </tr>
+    <tbody id="bodycate">
     </tbody>
 </table>
+<script>
+    var datos3 = {};
+    var _datosEmpresas;
+    //url: "/Producto/ListarProductosCategoria",
+    $.ajax({
+        url: "http://localhost/ApiNet/api/empresa/verempresas",
+        data: JSON.stringify(datos3),
+        type: "POST",
+        contentType: 'application/json; charset=utf-8',
+        dataType: 'json'
+    }).done(function (res) {
+        console.log(res.Mensaje);
+        if (res.Codigo === 0) {
+            _datosEmpresas = res.Data;
+            console.log(_datosEmpresas);
+            mostrarDatosCategorias();
+        } else {
+            console.log(res.Mensaje);
+        }
+    });
+    function mostrarDatosCategorias() {
+        $.each(_datosEmpresas, function (index, elemento) {
+            var columna = $("#bodycate").prepend("<tr>"+
+                                "<td>" + elemento.nombrempresa + "</td>" +
+                                "<td>" + elemento.nit + "</td>" +
+                                "<td>" + elemento.razon + "</td>" +
+                                "<td>" + elemento.direccion + "</td>" +
+                                "</tr>");
+                         });
+    }
+    
+    $(document).ready(function () {
+        $('#table_id').DataTable();
+    });
+
+</script>

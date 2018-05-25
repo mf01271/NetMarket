@@ -40,5 +40,11 @@ namespace NetMarket.Tests.Tests
             sucursal = sucursalService.ObtenerSucursal(sucursaldto);
             Assert.IsNull(sucursal);
         }
+        [TestMethod]
+        public void MostrarSucursalTest()
+        {
+            List<Sucursal> lsuc = sucursalService.ObtenerSucursales(sucursaldto);
+            Assert.IsNotNull(lsuc);
+        }
     }
 }

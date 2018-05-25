@@ -1,4 +1,3 @@
-D:\NetMarket\NetMarket\NetMarket.Tests\obj\Debug\NetMarket.Tests.csprojResolveAssemblyReference.cache
 D:\NetMarket\NetMarket\NetMarket.Tests\bin\Debug\NetMarket.Tests.dll.config
 D:\NetMarket\NetMarket\NetMarket.Tests\bin\Debug\NetMarket.Tests.dll
 D:\NetMarket\NetMarket\NetMarket.Tests\bin\Debug\NetMarket.Tests.pdb
@@ -10,5 +9,6 @@ D:\NetMarket\NetMarket\NetMarket.Tests\bin\Debug\EntityFramework.xml
 D:\NetMarket\NetMarket\NetMarket.Tests\bin\Debug\EntityFramework.SqlServer.xml
 D:\NetMarket\NetMarket\NetMarket.Tests\bin\Debug\es\EntityFramework.resources.dll
 D:\NetMarket\NetMarket\NetMarket.Tests\bin\Debug\es\EntityFramework.SqlServer.resources.dll
+D:\NetMarket\NetMarket\NetMarket.Tests\obj\Debug\NetMarket.Tests.csprojResolveAssemblyReference.cache
 D:\NetMarket\NetMarket\NetMarket.Tests\obj\Debug\NetMarket.Tests.dll
 D:\NetMarket\NetMarket\NetMarket.Tests\obj\Debug\NetMarket.Tests.pdb

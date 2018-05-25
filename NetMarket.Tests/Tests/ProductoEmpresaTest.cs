@@ -39,5 +39,11 @@ namespace NetMarket.Tests.Tests
             productoEmpresa = productoEmpresaService.Obtenerproducto(productoEmpresadto);
             Assert.IsNull(productoEmpresa);
         }
+        [TestMethod]
+        public void MostrarProductoEmpresaTest()
+        {
+            List<ProductoEmpresa> lperEmpr = productoEmpresaService.Obtenerproductos(productoEmpresadto);
+            Assert.IsNotNull(lperEmpr);
+        }
     }
 }
