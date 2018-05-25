@@ -14,7 +14,7 @@ namespace NetMarketData.Domain.Entities
         public DateTime? fechaNac_persona { get; set; }
         public string contraseña_persona { get; set; }
         public string correo_persona { get; set; }
-        public int id_tipo_persona { get; set; }
+        public long  id_tipo_persona { get; set; }
         public string tipo_persona { get; set; }
         public string telefono_movil_persona { get; set; }
         public string telefono_fijo_persona { get; set; }

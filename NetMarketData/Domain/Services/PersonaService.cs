@@ -1,4 +1,5 @@
-﻿using NetMarketData.Infrastructure.Data.DataModels;
+﻿using NetMarketData.Domain.Entities;
+using NetMarketData.Infrastructure.Data.DataModels;
 using NetMarketData.Infrastructure.Data.Repositories;
 using System;
 using System.Collections.Generic;
@@ -17,26 +18,23 @@ namespace NetMarketData.Domain.Services
             this.PersonaRepositorio = new PersonaRepositorio();
         }
 
-        public long GuardarPersona(string nombre_persona, string apellidos_persona, DateTime fechaNac_persona, string contraseña_persona,
-            string correo_persona, int id_tipo_persona, string telefono_movil_persona, string telefono_fijo, string ci_persona, bool eliminado, long pk = 0)
+        public long GuardarPersona(PersonaDTO pe)
         {
-            if (pk == 0)
-                pk = PersonaRepositorio.guardarPersona(nombre_persona, apellidos_persona, fechaNac_persona, contraseña_persona,
-                correo_persona, id_tipo_persona, telefono_movil_persona, telefono_fijo, ci_persona);
+            if (pe.id_persona == 0)
+                pe.id_persona = PersonaRepositorio.guardarPersona(pe);
             else
-                PersonaRepositorio.ModificarPersona(pk, nombre_persona, apellidos_persona, fechaNac_persona, contraseña_persona,
-                correo_persona, telefono_movil_persona, telefono_fijo, ci_persona, eliminado);
-            return pk;
+                PersonaRepositorio.ModificarPersona(pe);
+            return pe.id_persona;
         }
 
-        public void EliminarPersona(long pk)
+        public void EliminarPersona(PersonaDTO pe)
         {
-            PersonaRepositorio.EliminarPersona(pk);
+            PersonaRepositorio.EliminarPersona(pe);
         }
 
-        public Persona ObtenerPersona(long pk)
+        public Persona ObtenerPersona(PersonaDTO pe)
         {
-            return PersonaRepositorio.obtenerPersona(pk);
+            return PersonaRepositorio.obtenerPersona(pe);
         }
 
         public List<Persona> ObtenerPersonas()
