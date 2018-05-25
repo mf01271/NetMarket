@@ -9,12 +9,8 @@ namespace NetMarketAdmin.Controllers
 {
     public class EmpresaController : Controller
     {
-        protected PersonaRest PersonaRest = new PersonaRest();
+        protected EmpresaRest empresaRest = new EmpresaRest();
         // GET: Persona
-        public ActionResult Index()
-        {
-            return View();
-        }
         public ActionResult Empresas()
         {
             return View();
