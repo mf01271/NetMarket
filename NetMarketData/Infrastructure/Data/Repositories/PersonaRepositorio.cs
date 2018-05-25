@@ -57,13 +57,16 @@ namespace NetMarketData.Infrastructure.Data.Repositories
         public Persona obtenerPersona(PersonaDTO pe)
         {
             var e = Get(pe.id_persona);
-            if (e == null)
+            if (e != null)
             {
-                return null;
-            }
-            else if (e.eliminado != true)
-            {
-                return e;
+                if (e.eliminado != true)
+                {
+                    return e;
+                }
+                else
+                {
+                    return null;
+                }
             }
             else
             {
@@ -79,7 +82,7 @@ namespace NetMarketData.Infrastructure.Data.Repositories
         {
             try
             {
-                Persona per = BuildQuery().Where(x => x.correo == pe.correo_persona && x.contraseña == pe.contraseña_persona ).Single();
+                Persona per = BuildQuery().Where(x => x.correo == pe.correo_persona && x.contraseña == pe.contraseña_persona ).First();
                 if (per == null)
                 {
                     return null;

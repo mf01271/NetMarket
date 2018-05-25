@@ -44,19 +44,21 @@ namespace NetMarketData.Infrastructure.Data.Repositories
         public Sucursal obtenerSucursal(SucursalDTO s)
         {
             var e = Get(s.idSucursal);
-            if (e == null)
+            if (e != null)
             {
-                return null;
-            }
-            else if (e.eliminado != true)
-            {
-                return e;
+                if (e.eliminado != true)
+                {
+                    return e;
+                }
+                else
+                {
+                    return null;
+                }
             }
             else
             {
                 return null;
             }
-
         }
 
         public List<Sucursal> obtenerSucursales(SucursalDTO s)

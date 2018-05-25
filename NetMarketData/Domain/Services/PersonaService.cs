@@ -42,5 +42,17 @@ namespace NetMarketData.Domain.Services
             return PersonaRepositorio.obtenerPersonas();
         }
 
+        public PersonaDTO Login(PersonaDTO pe)
+        {
+            try
+            {
+                return PersonaRepositorio.Login(pe);
+            }
+            catch(Exception ex)
+            {
+                return null;
+            }
+            
+        }
     }
 }

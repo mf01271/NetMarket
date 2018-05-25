@@ -41,5 +41,9 @@ namespace NetMarketData.Domain.Services
             return TipoPersonaRepositorio.obtenerTiposPersona();
         }
 
+        public TipoPersona ObtenerxNombre(string nombreTipo)
+        {
+            return TipoPersonaRepositorio.ObtenerxNombre(nombreTipo);
+        }
     }
 }
