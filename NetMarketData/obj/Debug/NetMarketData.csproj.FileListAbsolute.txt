@@ -10,3 +10,6 @@ C:\Users\URIEL SOLIS\Desktop\d\visual\proyectos\NetMarket\NetMarketData\bin\Debu
 C:\Users\URIEL SOLIS\Desktop\d\visual\proyectos\NetMarket\NetMarketData\obj\Debug\NetMarketData.dll
 C:\Users\URIEL SOLIS\Desktop\d\visual\proyectos\NetMarket\NetMarketData\obj\Debug\NetMarketData.pdb
 C:\Users\URIEL SOLIS\Desktop\d\visual\proyectos\NetMarket\NetMarketData\obj\Debug\NetMarketData.csprojResolveAssemblyReference.cache
+C:\Users\URIEL SOLIS\Desktop\d\visual\proyectos\NetMarket\NetMarket2\NetMarket\NetMarketData\obj\Debug\NetMarketData.csprojResolveAssemblyReference.cache
+C:\Users\URIEL SOLIS\Desktop\d\visual\proyectos\NetMarket\NetMarket2\NetMarket\NetMarketData\obj\Debug\NetMarketData.dll
+C:\Users\URIEL SOLIS\Desktop\d\visual\proyectos\NetMarket\NetMarket2\NetMarket\NetMarketData\obj\Debug\NetMarketData.pdb
