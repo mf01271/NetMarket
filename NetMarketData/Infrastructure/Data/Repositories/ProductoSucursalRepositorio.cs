@@ -45,9 +45,16 @@ namespace NetMarketData.Infrastructure.Data.Repositories
         public ProductoSucursal obtenerProductoSucursal(ProductoSucursalDTO p)
         {
             var e = Get(p.idProductoSucursal);
-            if (e.eliminado != true)
+            if (e != null)
             {
-                return e;
+                if (e.eliminado != true)
+                {
+                    return e;
+                }
+                else
+                {
+                    return null;
+                }
             }
             else
             {

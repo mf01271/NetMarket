@@ -46,13 +46,16 @@ namespace NetMarketData.Infrastructure.Data.Repositories
         public Empresa obtenerEmpresa(long id)
         {
             var e = Get(id);
-            if (e == null)
+            if (e != null)
             {
-                return null;
-            }
-            else if (e.eliminado != true)
-            {
-                return e;
+                if (e.eliminado != true)
+                {
+                    return e;
+                }
+                else
+                {
+                    return null;
+                }
             }
             else
             {
