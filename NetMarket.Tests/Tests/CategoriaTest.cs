@@ -15,6 +15,7 @@ namespace NetMarket.Tests
     {
         CategoriaProductoService categoriaService = new CategoriaProductoService();
         CategoriaDTO categoriadto = new CategoriaDTO();
+        CategoriaProducto cat = new CategoriaProducto();
 
         [TestMethod]
         public void ObtenerCategoriaoExisteTest()
@@ -33,12 +34,19 @@ namespace NetMarket.Tests
         }
         [TestMethod]
         public void EliminarCategoriaTest()
-        {
-            CategoriaProducto cat = new CategoriaProducto();
+        {            
             categoriadto.idCategoria = 2;
             categoriaService.Eliminarcategoria(categoriadto);
             cat = categoriaService.Obtenercategoria(categoriadto);
             Assert.IsNull(cat);
         }
+
+        [TestMethod]
+        public void MostrarCategoriasTest()
+        {
+            List<CategoriaProducto> lca = categoriaService.Obtenercategorias();
+            Assert.IsNotNull(lca);
+        }
+
     }
 }

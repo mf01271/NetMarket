@@ -26,7 +26,7 @@ namespace NetMarket.Tests
         [TestMethod]
         public void ObtenerPersonaNoExisteTest()
         {
-            personadto.id_persona = 8;
+            personadto.id_persona = 14;
             persona = personaService.ObtenerPersona(personadto);
             Assert.IsNull(persona);
         }
@@ -34,10 +34,17 @@ namespace NetMarket.Tests
         [TestMethod]
         public void EliminarPersonaTest()
         {
-            personadto.id_persona = 7;
+            personadto.id_persona = 13;
             personaService.EliminarPersona(personadto);
             persona = personaService.ObtenerPersona(personadto);
             Assert.IsNull(persona);
         }
+        [TestMethod]
+        public void MostrarPersonasTest()
+        {
+            List<Persona> lper = personaService.ObtenerPersonas();
+            Assert.IsNotNull(lper);
+        }
+
     }
 }

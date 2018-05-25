@@ -39,6 +39,12 @@ namespace NetMarket.Tests
             empresa = empresaService.ObtenerEmpresa(empresadto);
             Assert.IsNull(empresa);
         }
+        [TestMethod]
+        public void MostrarEmpresasTest()
+        {
+            List<Empresa> lemp = empresaService.ObtenerEmpresas();
+            Assert.IsNotNull(lemp);
+        }
 
     }
 }

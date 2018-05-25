@@ -69,17 +69,17 @@
             correo_persona: $("#txbUsuario").val(),
             contraseña_persona: $("#txbPassword").val()
         };
-        var _datosCategoria;
+        //url: "/Persona/Login",
         $.ajax({
-            url: "/Persona/Login",
+            url: "http://localhost/ApiNet/api/Persona/login",
             cache: false,
             data: JSON.stringify(datos3),
             type: "POST",
             contentType: 'application/json; charset=utf-8',
             dataType: 'json'
-        }).done(function (respuestaMVC) {
-            console.log(respuestaMVC.Mensaje);
-            if (respuestaMVC.Codigo == 0) {
+        }).done(function (res) {
+            console.log(res.Mensaje);
+            if (res.Codigo === 0) {
                 window.location.replace("@Url.Action("Empresas", "Empresa")");
             } else {
                 window.alert("Datos erróneos");
