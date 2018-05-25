@@ -12,3 +12,17 @@ D:\NetMarket\NetMarket\NetMarket.Tests\bin\Debug\es\EntityFramework.SqlServer.re
 D:\NetMarket\NetMarket\NetMarket.Tests\obj\Debug\NetMarket.Tests.csprojResolveAssemblyReference.cache
 D:\NetMarket\NetMarket\NetMarket.Tests\obj\Debug\NetMarket.Tests.dll
 D:\NetMarket\NetMarket\NetMarket.Tests\obj\Debug\NetMarket.Tests.pdb
+C:\Users\URIEL SOLIS\Desktop\d\visual\proyectos\NetMarket\NetMarket2\NetMarket\NetMarket.Tests\bin\Debug\NetMarket.Tests.dll.config
+C:\Users\URIEL SOLIS\Desktop\d\visual\proyectos\NetMarket\NetMarket2\NetMarket\NetMarket.Tests\bin\Debug\NetMarket.Tests.dll
+C:\Users\URIEL SOLIS\Desktop\d\visual\proyectos\NetMarket\NetMarket2\NetMarket\NetMarket.Tests\bin\Debug\NetMarket.Tests.pdb
+C:\Users\URIEL SOLIS\Desktop\d\visual\proyectos\NetMarket\NetMarket2\NetMarket\NetMarket.Tests\bin\Debug\EntityFramework.dll
+C:\Users\URIEL SOLIS\Desktop\d\visual\proyectos\NetMarket\NetMarket2\NetMarket\NetMarket.Tests\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\URIEL SOLIS\Desktop\d\visual\proyectos\NetMarket\NetMarket2\NetMarket\NetMarket.Tests\bin\Debug\NetMarketData.dll
+C:\Users\URIEL SOLIS\Desktop\d\visual\proyectos\NetMarket\NetMarket2\NetMarket\NetMarket.Tests\bin\Debug\NetMarketData.pdb
+C:\Users\URIEL SOLIS\Desktop\d\visual\proyectos\NetMarket\NetMarket2\NetMarket\NetMarket.Tests\bin\Debug\EntityFramework.xml
+C:\Users\URIEL SOLIS\Desktop\d\visual\proyectos\NetMarket\NetMarket2\NetMarket\NetMarket.Tests\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\URIEL SOLIS\Desktop\d\visual\proyectos\NetMarket\NetMarket2\NetMarket\NetMarket.Tests\bin\Debug\es\EntityFramework.resources.dll
+C:\Users\URIEL SOLIS\Desktop\d\visual\proyectos\NetMarket\NetMarket2\NetMarket\NetMarket.Tests\bin\Debug\es\EntityFramework.SqlServer.resources.dll
+C:\Users\URIEL SOLIS\Desktop\d\visual\proyectos\NetMarket\NetMarket2\NetMarket\NetMarket.Tests\obj\Debug\NetMarket.Tests.csprojResolveAssemblyReference.cache
+C:\Users\URIEL SOLIS\Desktop\d\visual\proyectos\NetMarket\NetMarket2\NetMarket\NetMarket.Tests\obj\Debug\NetMarket.Tests.dll
+C:\Users\URIEL SOLIS\Desktop\d\visual\proyectos\NetMarket\NetMarket2\NetMarket\NetMarket.Tests\obj\Debug\NetMarket.Tests.pdb

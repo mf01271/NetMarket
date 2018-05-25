@@ -11,6 +11,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApiNet", "ApiNet\ApiNet.csp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClientRestNet", "ClientRestNet\ClientRestNet.csproj", "{4CB9CA75-8A5D-4600-BD1E-24535EE44012}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetMarket.Tests", "NetMarket.Tests\NetMarket.Tests.csproj", "{5B4F0D45-74DB-4F5D-94F7-B2BD72D8A861}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetMarketAdmin", "NetMarketAdmin\NetMarketAdmin.csproj", "{2E65862A-F602-4B7C-8F34-44F4D588EB12}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,26 +37,16 @@ Global
 		{4CB9CA75-8A5D-4600-BD1E-24535EE44012}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4CB9CA75-8A5D-4600-BD1E-24535EE44012}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4CB9CA75-8A5D-4600-BD1E-24535EE44012}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5B4F0D45-74DB-4F5D-94F7-B2BD72D8A861}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5B4F0D45-74DB-4F5D-94F7-B2BD72D8A861}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5B4F0D45-74DB-4F5D-94F7-B2BD72D8A861}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5B4F0D45-74DB-4F5D-94F7-B2BD72D8A861}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2E65862A-F602-4B7C-8F34-44F4D588EB12}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2E65862A-F602-4B7C-8F34-44F4D588EB12}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2E65862A-F602-4B7C-8F34-44F4D588EB12}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2E65862A-F602-4B7C-8F34-44F4D588EB12}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
-	EndGlobalSection
-	GlobalSection(TeamFoundationVersionControl) = preSolution
-		SccNumberOfProjects = 5
-		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
-		SccTeamFoundationServer = https://netmarketpro.visualstudio.com/
-		SccLocalPath0 = .
-		SccProjectUniqueName1 = ApiNet\\ApiNet.csproj
-		SccProjectName1 = ApiNet
-		SccLocalPath1 = ApiNet
-		SccProjectUniqueName2 = NetMarket\\NetMarket.csproj
-		SccProjectName2 = NetMarket
-		SccLocalPath2 = NetMarket
-		SccProjectUniqueName3 = NetMarketData\\NetMarketData.csproj
-		SccProjectName3 = NetMarketData
-		SccLocalPath3 = NetMarketData
-		SccProjectUniqueName4 = ClientRestNet\\ClientRestNet.csproj
-		SccProjectName4 = ClientRestNet
-		SccLocalPath4 = ClientRestNet
 	EndGlobalSection
 EndGlobal

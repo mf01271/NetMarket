@@ -17,7 +17,7 @@
     <AssemblyName>NetMarket</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <MvcBuildViews>false</MvcBuildViews>
-    <UseIISExpress>true</UseIISExpress>
+    <UseIISExpress>false</UseIISExpress>
     <IISExpressSSLPort />
     <IISExpressAnonymousAuthentication />
     <IISExpressWindowsAuthentication />
@@ -2873,6 +2873,7 @@
     <Content Include="fonts\themify\fonts\themify.ttf" />
     <Content Include="fonts\themify\fonts\themify.woff" />
     <Content Include="fonts\themify\Themify IconFonts 5-23-2014.json" />
+    <None Include="Properties\PublishProfiles\manual.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\fashe\main.js" />
     <Content Include="Scripts\fashe\main.min.js" />
@@ -3048,7 +3049,7 @@
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>59859</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:59859/</IISUrl>
+          <IISUrl>http://localhost/NetMarket</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>

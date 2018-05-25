@@ -9,3 +9,6 @@ C:\Users\URIEL SOLIS\Desktop\d\visual\proyectos\NetMarket\NetMarketData\bin\Rele
 C:\Users\URIEL SOLIS\Desktop\d\visual\proyectos\NetMarket\NetMarketData\bin\Release\es\EntityFramework.SqlServer.resources.dll
 C:\Users\URIEL SOLIS\Desktop\d\visual\proyectos\NetMarket\NetMarketData\obj\Release\NetMarketData.dll
 C:\Users\URIEL SOLIS\Desktop\d\visual\proyectos\NetMarket\NetMarketData\obj\Release\NetMarketData.pdb
+C:\Users\URIEL SOLIS\Desktop\d\visual\proyectos\NetMarket\NetMarket2\NetMarket\NetMarketData\obj\Release\NetMarketData.csprojResolveAssemblyReference.cache
+C:\Users\URIEL SOLIS\Desktop\d\visual\proyectos\NetMarket\NetMarket2\NetMarket\NetMarketData\obj\Release\NetMarketData.dll
+C:\Users\URIEL SOLIS\Desktop\d\visual\proyectos\NetMarket\NetMarket2\NetMarket\NetMarketData\obj\Release\NetMarketData.pdb

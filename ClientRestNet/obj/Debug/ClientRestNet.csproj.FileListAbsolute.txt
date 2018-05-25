@@ -9,8 +9,6 @@ C:\Users\URIEL SOLIS\Desktop\d\visual\proyectos\NetMarket\ClientRestNet\obj\Debu
 C:\Users\URIEL SOLIS\Desktop\d\visual\proyectos\NetMarket\ClientRestNet\obj\Debug\ClientRestNet.pdb
 C:\Users\URIEL SOLIS\Desktop\d\visual\proyectos\NetMarket\NetMarket2\NetMarket\ClientRestNet\bin\Debug\ClientRestNet.dll
 C:\Users\URIEL SOLIS\Desktop\d\visual\proyectos\NetMarket\NetMarket2\NetMarket\ClientRestNet\bin\Debug\ClientRestNet.pdb
-C:\Users\URIEL SOLIS\Desktop\d\visual\proyectos\NetMarket\NetMarket2\NetMarket\ClientRestNet\bin\Debug\ClientRestNet.dll.CodeAnalysisLog.xml
-C:\Users\URIEL SOLIS\Desktop\d\visual\proyectos\NetMarket\NetMarket2\NetMarket\ClientRestNet\bin\Debug\ClientRestNet.dll.lastcodeanalysissucceeded
 C:\Users\URIEL SOLIS\Desktop\d\visual\proyectos\NetMarket\NetMarket2\NetMarket\ClientRestNet\bin\Debug\Newtonsoft.Json.dll
 C:\Users\URIEL SOLIS\Desktop\d\visual\proyectos\NetMarket\NetMarket2\NetMarket\ClientRestNet\bin\Debug\System.Net.Http.Formatting.dll
 C:\Users\URIEL SOLIS\Desktop\d\visual\proyectos\NetMarket\NetMarket2\NetMarket\ClientRestNet\bin\Debug\Newtonsoft.Json.xml

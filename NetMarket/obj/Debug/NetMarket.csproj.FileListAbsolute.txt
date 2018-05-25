@@ -125,8 +125,6 @@ C:\Users\URIEL SOLIS\Desktop\d\visual\proyectos\NetMarket\NetMarket2\NetMarket\N
 C:\Users\URIEL SOLIS\Desktop\d\visual\proyectos\NetMarket\NetMarket2\NetMarket\NetMarket\bin\NetMarket.dll.config
 C:\Users\URIEL SOLIS\Desktop\d\visual\proyectos\NetMarket\NetMarket2\NetMarket\NetMarket\bin\NetMarket.dll
 C:\Users\URIEL SOLIS\Desktop\d\visual\proyectos\NetMarket\NetMarket2\NetMarket\NetMarket\bin\NetMarket.pdb
-C:\Users\URIEL SOLIS\Desktop\d\visual\proyectos\NetMarket\NetMarket2\NetMarket\NetMarket\bin\NetMarket.dll.CodeAnalysisLog.xml
-C:\Users\URIEL SOLIS\Desktop\d\visual\proyectos\NetMarket\NetMarket2\NetMarket\NetMarket\bin\NetMarket.dll.lastcodeanalysissucceeded
 C:\Users\URIEL SOLIS\Desktop\d\visual\proyectos\NetMarket\NetMarket2\NetMarket\NetMarket\bin\Antlr3.Runtime.dll
 C:\Users\URIEL SOLIS\Desktop\d\visual\proyectos\NetMarket\NetMarket2\NetMarket\NetMarket\bin\ClientRestNet.dll
 C:\Users\URIEL SOLIS\Desktop\d\visual\proyectos\NetMarket\NetMarket2\NetMarket\NetMarket\bin\EntityFramework.dll
@@ -198,7 +196,6 @@ C:\Users\URIEL SOLIS\Desktop\d\visual\proyectos\NetMarket\NetMarket2\NetMarket\N
 C:\Users\URIEL SOLIS\Desktop\d\visual\proyectos\NetMarket\NetMarket2\NetMarket\NetMarket\bin\Microsoft.Owin.Security.Google.xml
 C:\Users\URIEL SOLIS\Desktop\d\visual\proyectos\NetMarket\NetMarket2\NetMarket\NetMarket\bin\Microsoft.Owin.Security.Twitter.xml
 C:\Users\URIEL SOLIS\Desktop\d\visual\proyectos\NetMarket\NetMarket2\NetMarket\NetMarket\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
-C:\Users\URIEL SOLIS\Desktop\d\visual\proyectos\NetMarket\NetMarket2\NetMarket\NetMarket\bin\es\System.Web.Http.resources.dll
 C:\Users\URIEL SOLIS\Desktop\d\visual\proyectos\NetMarket\NetMarket2\NetMarket\NetMarket\bin\es\System.Web.Http.WebHost.resources.dll
 C:\Users\URIEL SOLIS\Desktop\d\visual\proyectos\NetMarket\NetMarket2\NetMarket\NetMarket\bin\es\System.Web.Helpers.resources.dll
 C:\Users\URIEL SOLIS\Desktop\d\visual\proyectos\NetMarket\NetMarket2\NetMarket\NetMarket\bin\es\System.Web.Mvc.resources.dll

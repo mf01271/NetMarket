@@ -63,8 +63,6 @@ C:\Users\URIEL SOLIS\Desktop\d\visual\proyectos\NetMarket\NetMarket2\NetMarket\A
 C:\Users\URIEL SOLIS\Desktop\d\visual\proyectos\NetMarket\NetMarket2\NetMarket\ApiNet\bin\ApiNet.dll.config
 C:\Users\URIEL SOLIS\Desktop\d\visual\proyectos\NetMarket\NetMarket2\NetMarket\ApiNet\bin\ApiNet.dll
 C:\Users\URIEL SOLIS\Desktop\d\visual\proyectos\NetMarket\NetMarket2\NetMarket\ApiNet\bin\ApiNet.pdb
-C:\Users\URIEL SOLIS\Desktop\d\visual\proyectos\NetMarket\NetMarket2\NetMarket\ApiNet\bin\ApiNet.dll.CodeAnalysisLog.xml
-C:\Users\URIEL SOLIS\Desktop\d\visual\proyectos\NetMarket\NetMarket2\NetMarket\ApiNet\bin\ApiNet.dll.lastcodeanalysissucceeded
 C:\Users\URIEL SOLIS\Desktop\d\visual\proyectos\NetMarket\NetMarket2\NetMarket\ApiNet\bin\Microsoft.AI.Agent.Intercept.dll
 C:\Users\URIEL SOLIS\Desktop\d\visual\proyectos\NetMarket\NetMarket2\NetMarket\ApiNet\bin\Microsoft.AI.DependencyCollector.dll
 C:\Users\URIEL SOLIS\Desktop\d\visual\proyectos\NetMarket\NetMarket2\NetMarket\ApiNet\bin\Microsoft.AI.PerfCounterCollector.dll
@@ -98,3 +96,6 @@ C:\Users\URIEL SOLIS\Desktop\d\visual\proyectos\NetMarket\NetMarket2\NetMarket\A
 C:\Users\URIEL SOLIS\Desktop\d\visual\proyectos\NetMarket\NetMarket2\NetMarket\ApiNet\obj\Debug\ApiNet.csprojResolveAssemblyReference.cache
 C:\Users\URIEL SOLIS\Desktop\d\visual\proyectos\NetMarket\NetMarket2\NetMarket\ApiNet\obj\Debug\ApiNet.dll
 C:\Users\URIEL SOLIS\Desktop\d\visual\proyectos\NetMarket\NetMarket2\NetMarket\ApiNet\obj\Debug\ApiNet.pdb
+C:\Users\URIEL SOLIS\Desktop\d\visual\proyectos\NetMarket\NetMarket2\NetMarket\ApiNet\bin\System.Web.Cors.dll
+C:\Users\URIEL SOLIS\Desktop\d\visual\proyectos\NetMarket\NetMarket2\NetMarket\ApiNet\bin\System.Web.Http.Cors.dll
+C:\Users\URIEL SOLIS\Desktop\d\visual\proyectos\NetMarket\NetMarket2\NetMarket\ApiNet\bin\System.Web.Http.Cors.xml
