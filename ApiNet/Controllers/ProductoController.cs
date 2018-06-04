@@ -20,7 +20,11 @@ namespace ApiNet.Controllers
     public class ProductoController : ApiController
     {
         private readonly ProductoService productoServicio = new ProductoService();
+        private readonly ProductoEmpresaService productoempresaServicio = new ProductoEmpresaService();
+        private readonly ProductoSucursalService productosucursalServicio = new ProductoSucursalService();
         private readonly CategoriaProductoService categoriaServicio = new CategoriaProductoService();
+        private readonly EmpresaService empresaServicio = new EmpresaService();
+        private readonly SucursalService sucursalServicio = new SucursalService();
         private readonly ImagenService imagenServicio = new ImagenService();
 
         [Route("api/producto/verproductos")]
@@ -46,11 +50,13 @@ namespace ApiNet.Controllers
                     {
                         idProducto = pr.idProducto,
                         nombre = pr.nombreProducto,
-                        descripcion = pr.descripcionProducto,
+                        descripcionCorta = pr.descripcionCortaProducto,
+                        descripcionLarga = pr.descripcionLargaProducto,
                         idCategoria = pr.idCategoria,
                         nombrecategoria = categoriaServicio.Obtenercategoria(c).nombreCategoria,
                         rutaimagen = imagenServicio.Obtenerimagen(i)
-                });
+
+                    });
                 }
 
                 return Ok(RespuestaApi<List<ProductoDTO>>.createRespuestaSuccess(productos, "success"));
@@ -86,6 +92,45 @@ namespace ApiNet.Controllers
                 Producto pro = new Producto();
                 ProductoDTO producto = new ProductoDTO();
                 pro = productoServicio.Obtenerproducto(p);
+
+                List<EmpresaDTO> lempresas = new List<EmpresaDTO>();
+                List<SucursalDTO> lsucursales = new List<SucursalDTO>();
+
+                ProductoEmpresaDTO pe = new ProductoEmpresaDTO();
+                pe.idProducto = pro.idProducto;
+                var prems = productoempresaServicio.obtenerProductosEmpresaByProductoID(pe);
+                foreach (var pre in prems)
+                {
+                    EmpresaDTO objempresa = new EmpresaDTO();
+                    objempresa.idEmpresa = Convert.ToInt64(pre.idEmpresa);
+                    lempresas.Add(new EmpresaDTO()
+                    {
+                        idEmpresa = Convert.ToInt64(pre.idEmpresa),
+                        nombrempresa = empresaServicio.ObtenerEmpresa(objempresa).nombreEmpresa,
+                        idproductoempresa = pre.idProductoEmpresa
+                    });
+                }
+                foreach(var e in lempresas)
+                {
+                    ProductoSucursalDTO ps = new ProductoSucursalDTO();
+                    ps.idProductoEmpresa = e.idproductoempresa;
+                    var prsus = productosucursalServicio.obtenerProductosSucursalByProductoEmpresaID(ps);
+                    foreach (var prs in prsus)
+                    {
+                        SucursalDTO objsucursal = new SucursalDTO();
+                        objsucursal.idSucursal = Convert.ToInt64(prs.idSucursal);
+                        lsucursales.Add(new SucursalDTO()
+                        {
+                            idSucursal = Convert.ToInt64(prs.idSucursal),
+                            nombre = sucursalServicio.ObtenerSucursal(objsucursal).nombreSucursal,
+                            idProductoSucursal = prs.idProductoSucursal,
+                            idProductoEmpresa=prs.idProductoEmpresa,
+                            precioProductoSucursal=prs.precio
+                        });
+                    }
+                }
+                
+
                 CategoriaDTO c = new CategoriaDTO()
                 {
                     idCategoria = pro.idCategoria
@@ -96,10 +141,13 @@ namespace ApiNet.Controllers
                     principal = true
                 };
                 producto.nombre = pro.nombreProducto;
-                producto.descripcion = pro.descripcionProducto;
+                producto.descripcionCorta = pro.descripcionCortaProducto;
+                producto.descripcionLarga = pro.descripcionLargaProducto;
                 producto.idCategoria = pro.idCategoria;
                 producto.nombrecategoria = categoriaServicio.Obtenercategoria(c).nombreCategoria;
                 producto.rutaimagen = imagenServicio.Obtenerimagen(i);
+                producto.empresas = lempresas;
+                producto.sucursales = lsucursales;
 
                 return Ok(RespuestaApi<ProductoDTO>.createRespuestaSuccess(producto, "success"));
             }

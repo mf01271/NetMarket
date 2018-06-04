@@ -17,7 +17,6 @@ namespace NetMarket.Controllers
         protected CategoriaRest CategoriaRest = new CategoriaRest();
         public ActionResult Index()
         {
-
             return View();
         }
         public ActionResult About()

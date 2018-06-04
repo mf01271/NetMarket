@@ -9,6 +9,7 @@ using Microsoft.Ajax.Utilities;
 using ClientRestNet;
 using ClientRestNet.RequestEntity;
 using ClientRestNet.ResponseEntity;
+using NetMarket.Entidades;
 namespace NetMarket.Controllers
 {
     public class ProductoController : Controller
@@ -21,6 +22,10 @@ namespace NetMarket.Controllers
 
         }
         public ActionResult ProductosCategoria()
+        {
+            return View();
+        }
+        public ActionResult ProductoSucursal()
         {
             return View();
         }

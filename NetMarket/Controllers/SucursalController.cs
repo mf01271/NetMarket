@@ -6,10 +6,10 @@ using System.Web.Mvc;
 
 namespace NetMarket.Controllers
 {
-    public class EmpresaController : Controller
+    public class SucursalController : Controller
     {
-        // GET: Empresa
-        public ActionResult Empresas()
+        // GET: Sucursal
+        public ActionResult Sucursales()
         {
             return View();
         }

@@ -1,7 +1,8 @@
 ﻿
 @{
-    ViewBag.Title = "ProductosCategoria";
+    ViewBag.Title = "ProductoSucursal";
 }
+
 <link href="~/css/General.css" rel="stylesheet" />
 <!-- Title Page -->
 <section class="bg-title-page p-t-50 p-b-40 flex-col-c-m" style="background-image: url(../images/heading-pages-02.jpg);">
@@ -173,38 +174,38 @@
                 <div class="row" id="prods">
 
                     @*<div class="col-sm-12 col-md-6 col-lg-4 p-b-50">
-                        <!-- Block2 -->
-                        <div class="block2">
+                            <!-- Block2 -->
+                            <div class="block2">
 
-                            <div class="block2-img wrap-pic-w of-hidden pos-relative block2-labelnew">
-                                <img src="../images/item-02.jpg" alt="IMG-PRODUCT">
+                                <div class="block2-img wrap-pic-w of-hidden pos-relative block2-labelnew">
+                                    <img src="../images/item-02.jpg" alt="IMG-PRODUCT">
 
-                                <div class="block2-overlay trans-0-4">
-                                    <a href="#" class="block2-btn-addwishlist hov-pointer trans-0-4">
-                                        <i class="icon-wishlist icon_heart_alt" aria-hidden="true"></i>
-                                        <i class="icon-wishlist icon_heart dis-none" aria-hidden="true"></i>
-                                    </a>
+                                    <div class="block2-overlay trans-0-4">
+                                        <a href="#" class="block2-btn-addwishlist hov-pointer trans-0-4">
+                                            <i class="icon-wishlist icon_heart_alt" aria-hidden="true"></i>
+                                            <i class="icon-wishlist icon_heart dis-none" aria-hidden="true"></i>
+                                        </a>
 
-                                    <div class="block2-btn-addcart w-size1 trans-0-4">
-                                        <!-- Button -->
-                                        <button class="flex-c-m size1 bg4 bo-rad-23 hov1 s-text1 trans-0-4">
-                                            Add to Cart
-                                        </button>
+                                        <div class="block2-btn-addcart w-size1 trans-0-4">
+                                            <!-- Button -->
+                                            <button class="flex-c-m size1 bg4 bo-rad-23 hov1 s-text1 trans-0-4">
+                                                Add to Cart
+                                            </button>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
 
-                            <div class="block2-txt p-t-20">
-                                <a href="product-detail.html" class="block2-name dis-block s-text3 p-b-5">
-                                    Herschel supply co 25l
-                                </a>
+                                <div class="block2-txt p-t-20">
+                                    <a href="product-detail.html" class="block2-name dis-block s-text3 p-b-5">
+                                        Herschel supply co 25l
+                                    </a>
 
-                                <span class="block2-price m-text6 p-r-5">
-                                    $75.00
-                                </span>
+                                    <span class="block2-price m-text6 p-r-5">
+                                        $75.00
+                                    </span>
+                                </div>
                             </div>
-                        </div>
-                    </div>*@
+                        </div>*@
                 </div>
 
                 <!-- Pagination -->
@@ -401,7 +402,7 @@
     <div class="modal-dialog">
 
         <!-- Modal content-->
-        <div class="modal-content" >
+        <div class="modal-content">
             <div class="modal-header" style="align-content:center;">
                 <div style="width:100%;">
                     <center>
@@ -409,9 +410,11 @@
                     </center>
                 </div>
             </div>
-            <div id="modalbody" class="modal-body" style="overflow:hidden;" >
+            <div id="modalbody" class="modal-body">
                 <!-- Product Detail -->
-                        <div class="w-size13 p-t-30 respon5" style="float:left;">
+                <div class="container bgwhite p-t-35 p-b-80">
+                    <div class="flex-w flex-sb">
+                        <div class="w-size13 p-t-30 respon5">
                             <div class="wrap-slick3 flex-sb flex-w">
                                 <div class="wrap-slick3-dots"></div>
 
@@ -437,7 +440,7 @@
                             </div>
                         </div>
 
-                        <div class="w-size14 p-t-30 respon5" style="float:right;">
+                        <div class="w-size14 p-t-30 respon5">
                             <h4 id="prodcname" class="product-detail-name m-text16 p-b-13">
                                 Nombre del Producto.
                             </h4>
@@ -445,7 +448,7 @@
                             <span id="prodcdesc" class="m-text17">
                                 Descripcion Corta.
                             </span>
-                            <br/>
+                            <br />
                             <span id="prodcprecio" class="m-text17">
                                 $Precio
                             </span>
@@ -453,32 +456,6 @@
                             <p id="prodcdesclong" class="s-text8 p-t-10">
                                 Descripcion larga.
                             </p>
-
-                            <!--  -->
-                            <div class="p-t-33 p-b-60">
-                                <div class="flex-m flex-w p-b-10">
-                                    <div class="s-text15 w-size15 t-center">
-                                        Size
-                                    </div>
-
-                                    <div class="rs2-select2 rs3-select2 bo4 of-hidden w-size16 " style="overflow:hidden;">
-                                        <select id="prodcem"style="width:100%;height: 45px;border: none;border-radius: 4px;-webkit-tap-highlight-color: transparent;padding-left: 22px;font-family: Montserrat-Regular;font-size: 13px;color: #555555;">
-                                            <option value="0">Elija una Empresa</option>
-                                        </select>
-                                    </div>
-                                </div>
-
-                                <div class="flex-m flex-w">
-                                    <div class="s-text15 w-size15 t-center">
-                                        Color
-                                    </div>
-
-                                    <div class="rs2-select2 rs3-select2 bo4 of-hidden w-size16" style="overflow:hidden;">
-                                        <select id="prodcsu" style="width:100%;height: 45px;border: none;border-radius: 4px;-webkit-tap-highlight-color: transparent;padding-left: 22px;font-family: Montserrat-Regular;font-size: 13px;color: #555555;">
-                                            <option value="0" data-precio="0">Elija una Sucursal</option>
-                                        </select>
-                                    </div>
-                                </div>
 
                                 <div class="flex-r-m flex-w p-t-10">
                                     <div class="w-size16 flex-m flex-w">
@@ -496,7 +473,7 @@
 
                                         <div class="btn-addcart-product-detail size9 trans-0-4 m-t-10 m-b-10">
                                             <!-- Button -->
-                                            <button id="btnaddList" data-idprodcsu="0" class="flex-c-m sizefull bg1 bo-rad-23 hov1 s-text1 trans-0-4">
+                                            <button id="btnaddList" class="flex-c-m sizefull bg1 bo-rad-23 hov1 s-text1 trans-0-4">
                                                 Añadir a la Lista
                                             </button>
                                         </div>
@@ -523,6 +500,9 @@
                             </div>
                         </div>
                     </div>
+                </div>
+
+            </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-default" data-dismiss="modal">cerrar</button>
             </div>
@@ -532,7 +512,6 @@
     </div>
 </div>
 <!-- End Modal -->
-
 <!-- Container Selection -->
 <div id="dropDownSelect1"></div>
 <div id="dropDownSelect2"></div>
@@ -600,15 +579,15 @@
 	    });
 </script>
 <script src="~/Scripts/fashe/main.js"></script>
-<script src="~/Scripts/js/ProductoCategorias.js"></script>
+<script src="~/Scripts/js/ProductoSucursal.js"></script>
 <script>
     $(document).ready(function () {
         $(".btnaddlist").click(function () {
             var idpro = $(this).attr("data-idproducto");
-            var datos3 = { idProducto: idpro };
+            var datos3 = { idProductoSucursal: idpro };
             var _datosProductoCategoria;
             $.ajax({
-                url: "http://localhost/ApiNet/api/producto/verproducto",
+                url: "http://localhost/ApiNet/api/productosucursal/verproducto",
                 cache: false,
                 data: JSON.stringify(datos3),
                 type: "POST",
@@ -625,56 +604,38 @@
                 }
             });
             function mostrarDatosCategorias() {
+                //cargar galeria de imagenes
+                var imgprincipal = "thumb-item-01.jpg";
+                var imgsecundaria = "thumb-item-01.jpg";
+                var imgterciaria = "thumb-item-01.jpg";
+                if (_datosProductoCategoria.rutaimagen1 != "") {
+                    imgprincipal = _datosProductoCategoria.rutaimagen1;
+                } else {
+                    imgprincipal = "thumb-item-01.jpg";
+                }
+                if (_datosProductoCategoria.rutaimagen2 != "") {
+                    imgsecundaria = _datosProductoCategoria.rutaimagen2;
+                } else {
+                    imgsecundaria = "thumb-item-01.jpg";
+                }
+                if (_datosProductoCategoria.rutaimagen3 != "") {
+                    imgterciaria = _datosProductoCategoria.rutaimagen3;
+                } else {
+                    imgterciaria = "thumb-item-01.jpg";
+                }
                 $("#prodcname").text(_datosProductoCategoria.nombre);
                 $("#prodcdesc").text(_datosProductoCategoria.descripcionCorta);
-                $("#imgprinc1").attr("data-thumb", "http://localhost/NetMarket/images/" + _datosProductoCategoria.rutaimagen);
+                $("#imgprinc1").attr("data-thumb", "http://localhost/NetMarket/images/" + imgprincipal);
                 var lithumb = $(".wrap-slick3-dots .slick3-dots li");
                 //console.log(lithumb);
-                lithumb[0].innerHTML="<img src='http://localhost/NetMarket/images/" + _datosProductoCategoria.rutaimagen+"'><div class='slick3-dot-overlay'></div>";
-                $("#imgprinc2").attr("src", "http://localhost/NetMarket/images/" + _datosProductoCategoria.rutaimagen);
-                $("#prodccate").text("Categorias: ");
+                lithumb[0].innerHTML = "<img src='http://localhost/NetMarket/images/" + imgprincipal + "'><div class='slick3-dot-overlay'></div>";
+                $("#imgprinc2").attr("src", "http://localhost/NetMarket/images/" + imgprincipal);
                 var cat = $("#prodccate").text();
-                cat = cat + _datosProductoCategoria.nombrecategoria;
+                cat = cat + _datosProductoCategoria.nombreCategoria;
                 $("#prodccate").text(cat);
                 $("#prodcdesclong").text(_datosProductoCategoria.descripcionLarga);
-
-                var vaciadorempresa = document.getElementById("prodcem");
-                vaciadorempresa.innerHTML = "<option value='0'>Elija una Empresa</option>";
-                var vaciadorempresa = document.getElementById("prodcsu");
-                vaciadorempresa.innerHTML = "<option value='0' data-precio='0'>Elija una Sucursal</option>";
-                if (_datosProductoCategoria.empresas.length == 0) {
-                    var columna = $("#prodcem").prepend("<option value='0'>No Disponible</option>");
-                }
-                $.each(_datosProductoCategoria.empresas, function (index, elemento) {
-                    var columna = $("#prodcem").prepend("<option value='" + elemento.idproductoempresa + "'>" + elemento.nombrempresa + "</option>");
-                });
-                $("#prodcem").change(function () {
-                    var idproem = $(this).val();
-                    var vaciadorempresa = document.getElementById("prodcsu");
-                    vaciadorempresa.innerHTML = "<option value='0' data-precio='0'>Elija una Sucursal</option>";
-                    if (_datosProductoCategoria.sucursales.length == 0) {
-                        var columna = $("#prodcsu").prepend("<option value='0' data-precio='0'>No Disponible</option>");
-                    }
-                    $.each(_datosProductoCategoria.sucursales, function (index, elemento) {
-                        if (elemento.idProductoEmpresa == idproem)
-                        {
-                            var columna = $("#prodcsu").prepend("<option value='" + elemento.idProductoSucursal + "' data-precio='"+elemento.precioProductoSucursal+"'>" + elemento.nombre + "</option>");
-                        }
-                        else
-                        {
-                            var columna = $("#prodcsu").prepend("<option value='0' data-precio='0' >No Disponible</option>");
-                        }
-                    });
-                });
-                $("#prodcsu").change(function () {
-                    var idprosu = $(this).val();
-                    var precio = $("#prodcsu option:selected").select().attr("data-precio");
-                    $("#btnaddList").attr("data-idprodcsu", idprosu);
-                    if (precio != 0) {
-                        $("#prodcprecio").text("Bs. " + precio);
-                    }
-                });
-
+                $("#prodcprecio").text("Bs. " + _datosProductoCategoria.precio);
+                $("#btnaddList").attr("data-idprodcsu", _datosProductoCategoria.idProductoSucursal);
                 $("#btnaddList").click(function () {
                     var idprosu = $(this).attr("data-idprodcsu");
                     var varcant = $("#cantinput").val();
@@ -686,21 +647,20 @@
                         $.ajax({
                             url: "@Url.Action("AgregaralCarrito", "Carrito")",
                             cache: false,
-                        data: JSON.stringify(data),
-                        type: "POST",
-                        contentType: 'application/json; charset=utf-8',
-                        dataType: 'json'
-                    }).done(function (res) {
-                        console.log(res.productos);
-                        sweetAlert("Mensaje", res.mensaje, "success");
-                    });
+                            data: JSON.stringify(data),
+                            type: "POST",
+                            contentType: 'application/json; charset=utf-8',
+                            dataType: 'json'
+                        }).done(function (res) {
+                            console.log(res.productos);
+                            sweetAlert("Mensaje", res.mensaje, "success");
+                        });
                         
-                }
-                else {
+                    }
+                    else {
                         sweetAlert("Mensaje","Producto no disponible","success");
-            }
-        });
-                
+                    }
+                });
 
             }
         });
@@ -790,3 +750,5 @@
     }
     });
 </script>
+
+

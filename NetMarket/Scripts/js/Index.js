@@ -1,7 +1,7 @@
 ﻿var datos3 = {};
 var _datosCategoria;
 $.ajax({
-    url: "http://localhost/ApiNet/Home/ListarCategorias",
+    url: "http://localhost/ApiNet/api/categoriaproducto/vercategorias",
     cache: false,
 data: JSON.stringify(datos3),
 type: "POST",
@@ -22,7 +22,12 @@ function mostrarDatosCategorias() {
     $.each(_datosCategoria, function (index, elemento) {
         contador = contador + 1;
         
-        var columna = $("#colm" + contador).prepend("<div class='" + "block1 hov-img-zoom pos-relative m-b-30" + "'><img src='" + "../images/" + elemento.rutaimagen + "' alt='" + "IMG-BENNER" + "'><div class='" + "block1-wrapbtn w-size2" + "'><a href='" + "Producto/ProductosCategoria?idc=" + elemento.idCategoria + "' class='" + "flex-c-m size2 m-text2 bg3 hov1 trans-0-4 linkcate" + "'>" + elemento.nombre + "</a></div></div>");
+        var columna = $("#colm" + contador).prepend("<div class='block1 hov-img-zoom pos-relative m-b-30'>" +
+            "<img src='http://localhost/NetMarket/images/" + elemento.rutaimagen + "' alt='IMG-BENNER'>" +
+            "<div class='block1-wrapbtn w-size2'>" +
+            "<a href='http://localhost/NetMarket/Producto/ProductosCategoria?idc=" + elemento.idCategoria + "' class='flex-c-m size2 m-text2 bg3 hov1 trans-0-4 linkcate'>" + elemento.nombre + "</a>" +
+            "</div>" +
+            "</div>");
         if (contador == 3) {
             contador = 0;
         }

@@ -1,0 +1,12 @@
+﻿
+    .modal-content {
+        margin-left:-30%;
+        margin-right:-30%;
+        
+    }
+@media screen and (max-width:838px) {
+    .modal-content {
+        margin-left: 0% !important;
+        margin-right: 0% !important;
+    }
+}
